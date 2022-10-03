@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+
+.toolbar {
+    background: #cfd1d0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.isActive {
+    font-weight: 600;
+    font-size: 0.875rem;
+    cursor: pointer
+}
+
+.isNotActive {
+    font-weight: 400;
+    font-size: 0.675rem;
+    cursor: pointer;
+}

@@ -21,7 +21,7 @@ public class CacheConfig {
     public CacheManager ehCacheManager() {
         CacheConfiguration<SimpleKey, Object> cacheConfig = CacheConfigurationBuilder
                 .newCacheConfigurationBuilder(SimpleKey.class, Object.class, ResourcePoolsBuilder.heap(10))
-                .withExpiry(ExpiryPolicyBuilder.timeToLiveExpiration(Duration.ofSeconds(15)))
+                .withExpiry(ExpiryPolicyBuilder.timeToLiveExpiration(Duration.ofMinutes(15)))
                 .build();
 
         javax.cache.CacheManager cacheManager = Caching.getCachingProvider("org.ehcache.jsr107.EhcacheCachingProvider")
