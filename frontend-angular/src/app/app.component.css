@@ -1,0 +1,12 @@
+.toolbar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1000;
+  justify-content: space-between;
+  background: #cfd1d0;
+}
+
+.app-root {
+  background: rgb(207, 209, 208);
+}

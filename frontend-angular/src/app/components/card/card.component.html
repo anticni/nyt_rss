@@ -1,0 +1,11 @@
+<!-- Cards with media area -->
+<mat-card *ngFor="let card of cards| async" class="card">
+  <mat-card-title-group>
+    <mat-card-title (click)="goToLink(card.link)">{{card.title}}</mat-card-title>
+    <mat-card-subtitle>{{card.creator}} | {{card.publishedDate | date:'yyyy-MM-dd'}}</mat-card-subtitle>
+    <img mat-card-lg-image src={{card.imgUrl}} (click)="goToLink(card.link)"/>
+  </mat-card-title-group>
+  <mat-card-content (click)="goToLink(card.link)">
+    {{card.description}}
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,15 @@
+
+<mat-toolbar class="toolbar">
+  <span >{{currentDate | date:'yyyy-MM-dd'}}</span>
+  <span><img height="30vw" src="assets/nytimes-logo.png" alt=""></span>
+  <!--  <button class="right" id=”translatebtn” (click)="send()">Translate</button>-->
+  <mat-button-toggle-group #group="matButtonToggleGroup" [value]="selectedLanguage"
+                           (change)="onLanguageChange(group.value)">
+    <mat-button-toggle value="en">🇺🇸</mat-button-toggle>
+    <mat-button-toggle value="es">🇪🇸</mat-button-toggle>
+  </mat-button-toggle-group>
+</mat-toolbar>
+
+
+<card [language]="selectedLanguage"></card>
+

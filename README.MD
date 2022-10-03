@@ -29,6 +29,6 @@ If you wanna do it manually:
 - run `npm install`
 - run `npm start` to serve locally
 
-##NOTES:
+## NOTES:
 - URLs are HARDCODED TO LOCALHOST:8080
 - the API key used for google translate is not hidden, but will not work for long ;D
